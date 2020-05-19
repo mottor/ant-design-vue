@@ -25,7 +25,7 @@
     }
 
     .@{calendar-prefix-cls}-picker-down {
-      color: @text-color-secondary;
+      color: @disabled-color;
       cursor: pointer;
       display: inherit;
       transition: transform 0.3s;
@@ -64,17 +64,13 @@
 .@{calendar-prefix-cls}-range-picker-input {
   text-align: center;
   background-color: transparent;
-  padding: 0 0.4em;
+  padding: 0;
   white-space: nowrap;
   // .placeholder();
 
   &[disabled] {
     cursor: not-allowed;
   }
-}
-
-.@{calendar-prefix-cls}-range-picker-input--end {
-  padding-right: 1px;
 }
 
 .@{calendar-prefix-cls}-range-picker-placeholder {

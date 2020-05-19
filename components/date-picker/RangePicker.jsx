@@ -402,11 +402,11 @@ export default {
 
       return (
         <span class={props.pickerInputClass}>
-          <span class={`${prefixCls}-range-picker-text`}>с</span>
+          <span class={`${prefixCls}-range-picker-text`}>с&nbsp;</span>
           <span disabled={props.disabled} class={startDateClasses}>
             {startDateText}
           </span>
-          <span class={`${prefixCls}-range-picker-text`}>по</span>
+          <span class={`${prefixCls}-range-picker-text`}>&nbsp;по&nbsp;</span>
           <span disabled={props.disabled} class={endDateClasses}>
             {endDateText}
           </span>
