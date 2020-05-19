@@ -384,26 +384,35 @@ export default {
 
     const input = ({ value: inputValue }) => {
       const [start, end] = inputValue;
+
+      let startDateText = formatDate(start, props.format);
+      let startDateClasses = `${prefixCls}-range-picker-input`;
+      if (!startDateText) {
+        startDateText = startPlaceholder;
+        startDateClasses += ` ${prefixCls}-range-picker-placeholder`;
+      }
+
+      let endDateText = formatDate(end, props.format);
+      let endDateClasses = `${prefixCls}-range-picker-input`;
+      if (!endDateText) {
+        endDateText = endPlaceholder;
+        endDateClasses += ` ${prefixCls}-range-picker-placeholder`;
+      }
+
       return (
         <span class={props.pickerInputClass}>
           <span class={`${prefixCls}-range-picker-text`}>с</span>
-          <input
+          <span
             disabled={props.disabled}
-            readOnly
-            value={formatDate(start, props.format)}
-            placeholder={startPlaceholder}
-            class={`${prefixCls}-range-picker-input`}
-            tabIndex={-1}
-          />
+            class={startDateClasses}>
+            {startDateText}
+          </span>
           <span class={`${prefixCls}-range-picker-text`}>по</span>
-          <input
+          <span
             disabled={props.disabled}
-            readOnly
-            value={formatDate(end, props.format)}
-            placeholder={endPlaceholder}
-            class={`${prefixCls}-range-picker-input`}
-            tabIndex={-1}
-          />
+            class={endDateClasses}>
+            {endDateText}
+          </span>
           {clearIcon}
           {inputIcon}
         </span>
@@ -430,10 +439,11 @@ export default {
         scopedSlots: { default: input, ...$scopedSlots },
       },
     );
+    const pickerClass = props.pickerClass + ` ${prefixCls}-range-picker`;
     return (
       <span
         ref="picker"
-        class={props.pickerClass}
+        class={pickerClass}
         style={pickerStyle}
         tabIndex={props.disabled ? -1 : 0}
         onFocus={focus}
