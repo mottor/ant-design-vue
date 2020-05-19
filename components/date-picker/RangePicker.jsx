@@ -431,7 +431,7 @@ export default {
           calendar,
           value,
           open,
-          placement: 'topLeft',
+          placement: 'bottomLeftWithOffset',
           prefixCls: `${prefixCls}-picker-container`,
         },
         on: {
