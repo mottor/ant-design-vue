@@ -420,7 +420,7 @@ export default {
           calendar,
           value,
           open,
-          placement: 'bottomLeft',
+          placement: 'topLeft',
           prefixCls: `${prefixCls}-picker-container`,
         },
         on: {
