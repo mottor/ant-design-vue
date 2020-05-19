@@ -389,6 +389,7 @@ export default {
       const [start, end] = inputValue;
       return (
         <span class={props.pickerInputClass}>
+          <span class={`${prefixCls}-range-picker-text`}>с</span>
           <input
             disabled={props.disabled}
             readOnly
@@ -397,7 +398,7 @@ export default {
             class={`${prefixCls}-range-picker-input`}
             tabIndex={-1}
           />
-          <span class={`${prefixCls}-range-picker-separator`}> {separator} </span>
+          <span class={`${prefixCls}-range-picker-text`}>по</span>
           <input
             disabled={props.disabled}
             readOnly
