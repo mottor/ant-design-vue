@@ -464,8 +464,8 @@
             <a-checkbox>Корзина</a-checkbox>
           </template>
         </a-popover>
-        <div style="display: inline-block; width: 200px">
-          <a-range-picker size="small" />
+        <div style="display: inline-block;">
+          <a-range-picker class="is-filter" size="small" />
         </div>
         <a-dropdown :trigger="['click']">
           <a-button icon="ellipsis" type="secondary" size="small"></a-button>

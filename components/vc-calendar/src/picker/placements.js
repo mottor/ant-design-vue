@@ -12,6 +12,12 @@ const placements = {
     offset: [0, -3],
     targetOffset,
   },
+  bottomLeftWithOffset: {
+    points: ['tl', 'bl'],
+    overflow: autoAdjustOverflow,
+    offset: [0, 3],
+    targetOffset,
+  },
   bottomRight: {
     points: ['tr', 'tr'],
     overflow: autoAdjustOverflow,

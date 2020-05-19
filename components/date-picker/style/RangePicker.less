@@ -1,12 +1,55 @@
 @input-box-height: 34px;
 
+.@{calendar-prefix-cls}-range-picker {
+  width: auto;
+
+  &.is-filter {
+    .@{calendar-prefix-cls}-picker-clear {
+      background: transparent;
+    }
+
+    .@{calendar-prefix-cls}-picker-input {
+      background: transparent;
+      border: 0;
+    }
+
+    .@{calendar-prefix-cls}-picker-down {
+      color: @text-color-secondary;
+      cursor: pointer;
+      display: inherit;
+    }
+
+    .@{calendar-prefix-cls}-picker-clear {
+      display: none;
+    }
+  }
+
+  .@{calendar-prefix-cls}-picker-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .@{calendar-prefix-cls}-picker-clear {
+    right: 4px;
+  }
+
+  &.@{calendar-prefix-cls}-picker-small {
+    .@{calendar-prefix-cls}-picker-clear {
+      right: 2px;
+    }
+  }
+}
+
+.@{calendar-prefix-cls}-picker-down {
+  display: none;
+}
+
 .@{calendar-prefix-cls}-range-picker-input {
-  width: 44%;
-  height: 99%;
   text-align: center;
   background-color: transparent;
-  border: 0;
-  outline: 0;
+  padding: 0 8px;
+  white-space: nowrap;
   .placeholder();
 
   &[disabled] {
@@ -14,14 +57,16 @@
   }
 }
 
-.@{calendar-prefix-cls}-range-picker-separator {
+.@{calendar-prefix-cls}-range-picker-placeholder {
+  color: @input-placeholder-color;
+}
+
+.@{calendar-prefix-cls}-range-picker-text {
   display: inline-block;
   min-width: 10px;
-  height: 100%;
   color: @text-color-secondary;
   white-space: nowrap;
   text-align: center;
-  vertical-align: top;
   pointer-events: none;
 }
 
@@ -61,29 +106,6 @@
     }
   }
 
-  &-middle {
-    position: absolute;
-    left: 50%;
-    z-index: 1;
-    height: @input-box-height;
-    margin: 1px 0 0 0;
-    padding: 0 200px 0 0;
-    color: @text-color-secondary;
-    line-height: @input-box-height;
-    text-align: center;
-    transform: translateX(-50%);
-    pointer-events: none;
-  }
-
-  &-right .@{calendar-prefix-cls}-date-input-wrap {
-    margin-left: -90px;
-  }
-
-  &.@{calendar-prefix-cls}-time &-middle {
-    padding: 0 10px 0 0;
-    transform: translateX(-50%);
-  }
-
   .@{calendar-prefix-cls}-today
     :not(.@{calendar-prefix-cls}-disabled-cell)
     :not(.@{calendar-prefix-cls}-last-month-cell)
@@ -107,6 +129,7 @@
   .@{calendar-prefix-cls}-input-wrap {
     position: relative;
     height: @input-box-height;
+    border-bottom: 0;
   }
 
   .@{calendar-prefix-cls}-input,
