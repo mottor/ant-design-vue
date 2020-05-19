@@ -380,22 +380,21 @@ export default {
         />
       ) : null;
 
-
     // const inputIcon = <InputIcon suffixIcon={suffixIcon} prefixCls={prefixCls} />;
-    const inputIcon = <Icon type="mtr-arrow-down" class={`${prefixCls}-picker-down`}/>;
+    const inputIcon = <Icon type="mtr-arrow-down" class={`${prefixCls}-picker-down`} />;
 
     const input = ({ value: inputValue }) => {
       const [start, end] = inputValue;
 
       let startDateText = formatDate(start, props.format);
-      let startDateClasses = `${prefixCls}-range-picker-input`;
+      let startDateClasses = `${prefixCls}-range-picker-input ${prefixCls}-range-picker-input--start`;
       if (!startDateText) {
         startDateText = startPlaceholder;
         startDateClasses += ` ${prefixCls}-range-picker-placeholder`;
       }
 
       let endDateText = formatDate(end, props.format);
-      let endDateClasses = `${prefixCls}-range-picker-input`;
+      let endDateClasses = `${prefixCls}-range-picker-input ${prefixCls}-range-picker-input--end`;
       if (!endDateText) {
         endDateText = endPlaceholder;
         endDateClasses += ` ${prefixCls}-range-picker-placeholder`;
@@ -404,15 +403,11 @@ export default {
       return (
         <span class={props.pickerInputClass}>
           <span class={`${prefixCls}-range-picker-text`}>с</span>
-          <span
-            disabled={props.disabled}
-            class={startDateClasses}>
+          <span disabled={props.disabled} class={startDateClasses}>
             {startDateText}
           </span>
           <span class={`${prefixCls}-range-picker-text`}>по</span>
-          <span
-            disabled={props.disabled}
-            class={endDateClasses}>
+          <span disabled={props.disabled} class={endDateClasses}>
             {endDateText}
           </span>
           {clearIcon}

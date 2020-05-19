@@ -73,6 +73,10 @@
   }
 }
 
+.@{calendar-prefix-cls}-range-picker-input--end {
+  padding-right: 1px;
+}
+
 .@{calendar-prefix-cls}-range-picker-placeholder {
   // color: @input-placeholder-color;
 }
@@ -83,6 +87,28 @@
   white-space: nowrap;
   text-align: center;
   pointer-events: none;
+}
+
+.@{calendar-prefix-cls}-range-picker-text,
+.@{calendar-prefix-cls}-range-picker-input {
+  height: (@input-height-base - 2 * @input-border-width);
+  line-height: (@input-height-base - 2 * @input-border-width);
+}
+
+&.@{calendar-prefix-cls}-picker-large {
+  .@{calendar-prefix-cls}-range-picker-text,
+  .@{calendar-prefix-cls}-range-picker-input {
+    height: (@input-height-lg - 2 * @input-border-width);
+    line-height: (@input-height-lg - 2 * @input-border-width);
+  }
+}
+
+&.@{calendar-prefix-cls}-picker-small {
+  .@{calendar-prefix-cls}-range-picker-text,
+  .@{calendar-prefix-cls}-range-picker-input {
+    height: (@input-height-sm - 2 * @input-border-width);
+    line-height: (@input-height-sm - 2 * @input-border-width);
+  }
 }
 
 .@{calendar-prefix-cls}-range {
