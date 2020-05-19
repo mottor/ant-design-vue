@@ -75,7 +75,6 @@ export const RangePickerProps = () => ({
   ranges: PropTypes.object,
   placeholder: PropTypes.arrayOf(String),
   mode: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(String)]),
-  separator: PropTypes.any,
   disabledTime: PropTypes.func,
   showToday: PropTypes.bool,
   renderExtraFooter: PropTypes.any,

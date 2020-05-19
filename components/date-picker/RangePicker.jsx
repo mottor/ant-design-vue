@@ -77,7 +77,6 @@ export default {
   props: initDefaultProps(RangePickerProps(), {
     allowClear: true,
     showToday: false,
-    separator: '—',
   }),
   inject: {
     configProvider: { default: () => ConfigConsumerProps },
@@ -291,7 +290,6 @@ export default {
       locale,
       localeCode,
       format,
-      separator,
       inputReadOnly,
     } = props;
     const getPrefixCls = this.configProvider.getPrefixCls;
@@ -339,7 +337,6 @@ export default {
 
     const rangeCalendarProps = mergeProps(calendarProps, {
       props: {
-        separator,
         format,
         prefixCls,
         renderFooter: this.renderFooter,
