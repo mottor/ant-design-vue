@@ -380,7 +380,9 @@ export default {
         />
       ) : null;
 
-    const inputIcon = <InputIcon suffixIcon={suffixIcon} prefixCls={prefixCls} />;
+
+    // const inputIcon = <InputIcon suffixIcon={suffixIcon} prefixCls={prefixCls} />;
+    const inputIcon = <Icon type="mtr-arrow-down" class={`${prefixCls}-picker-down`}/>;
 
     const input = ({ value: inputValue }) => {
       const [start, end] = inputValue;
