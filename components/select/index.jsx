@@ -165,7 +165,7 @@ const Select = {
       if (loading) {
         return <Icon type="loading" />;
       }
-      return <Icon type="down" class={`${prefixCls}-arrow-icon`} />;
+      return <Icon type="mtr-arrow-down" class={`${prefixCls}-arrow-icon`} />;
     },
   },
   render() {
