@@ -215,6 +215,9 @@ const Picker = {
       this.calendarInstance = this.getCalendarElement();
     }
 
+    const calendarPrefix = 'ant-calendar-';
+    const triggerClass = calendarPrefix + (sOpen ? 'opened' : 'closed');
+
     return (
       <Trigger
         popupAlign={align}
@@ -227,6 +230,7 @@ const Picker = {
         popupAnimation={animation}
         popupTransitionName={transitionName}
         popupVisible={sOpen}
+        class={triggerClass}
         onPopupVisibleChange={this.onVisibleChange}
         prefixCls={prefixCls}
         popupClassName={dropdownClassName}

@@ -1,3 +1,7 @@
+@calendar-cell-height: 36px;
+@calendar-cell-width: 36px;
+@calendar-cell-indent: 2px; // отступ сверху и снизу
+
 .calendarLeftArrow() {
   height: 100%;
 
@@ -155,7 +159,8 @@
   border: @border-width-base @border-style-base @border-color-inverse;
   border-radius: @border-radius-base;
   outline: none;
-  box-shadow: @box-shadow-base;
+  box-shadow: @base-popovers-shadow;
+  border: 1px solid darken(@popover-bg, 9%);
 
   &-input-wrap {
     height: 34px;
@@ -227,18 +232,18 @@
   }
 
   &-cell {
-    height: 30px;
-    padding: 3px 0;
+    height: @calendar-cell-height;
+    padding: @calendar-cell-indent 0;
   }
 
   &-date {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: @calendar-cell-width;
+    height: (@calendar-cell-height - 2 * @calendar-cell-indent);
     margin: 0 auto;
     padding: 0;
     color: @text-color;
-    line-height: 22px;
+    line-height: (@calendar-cell-height - 2 * @calendar-cell-indent - 2 * @border-width-base);
     text-align: center;
     background: transparent;
     border: @border-width-base @border-style-base transparent;
