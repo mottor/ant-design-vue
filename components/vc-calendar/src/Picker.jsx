@@ -34,7 +34,7 @@ const Picker = {
     open: PropTypes.bool,
     defaultOpen: PropTypes.bool.def(false),
     prefixCls: PropTypes.string.def('rc-calendar-picker'),
-    placement: PropTypes.any.def('bottomLeft'),
+    placement: PropTypes.any.def('topLeft'),
     value: TimeType,
     defaultValue: TimeType,
     align: PropTypes.object.def(() => ({})),
