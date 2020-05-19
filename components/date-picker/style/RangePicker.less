@@ -60,27 +60,8 @@
     }
   }
 
-  &-middle {
-    position: absolute;
-    left: 50%;
-    z-index: 1;
-    height: @input-box-height;
-    margin: 1px 0 0 0;
-    padding: 0 200px 0 0;
-    color: @text-color-secondary;
-    line-height: @input-box-height;
-    text-align: center;
-    transform: translateX(-50%);
-    pointer-events: none;
-  }
-
   &-right .@{calendar-prefix-cls}-date-input-wrap {
     margin-left: -90px;
-  }
-
-  &.@{calendar-prefix-cls}-time &-middle {
-    padding: 0 10px 0 0;
-    transform: translateX(-50%);
   }
 
   .@{calendar-prefix-cls}-today
@@ -106,6 +87,7 @@
   .@{calendar-prefix-cls}-input-wrap {
     position: relative;
     height: @input-box-height;
+    border-bottom: 0;
   }
 
   .@{calendar-prefix-cls}-input,
