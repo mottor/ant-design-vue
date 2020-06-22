@@ -152,9 +152,35 @@
         <br />
         <br />
         <h3>Button a[href]</h3>
-        <div style="padding-left: 30px;">
+        <div>
           <a href="#" class="ant-btn"><span>Ссылка</span></a>
           <a href="#" class="ant-btn" disabled><span>Ссылка неактивная</span></a>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <h2>Inputs</h2>
+      <div style="padding-left: 30px;">
+        <div><a-input style="width: 200px;" placeholder="Простой инпут"></a-input></div>
+        <div style="margin-top: 16px">
+          <a-input
+            style="width: 200px;"
+            default-value="mysite"
+            class="ant-input-search-enter-button"
+          >
+            <a-button slot="addonAfter" type="primary">Кнопка</a-button>
+          </a-input>
+        </div>
+        <div style="margin-top: 16px">
+          <a-input-group>
+            <a-input style="width: 200px;"></a-input>
+            <a-button
+              type="secondary"
+              style="border-top-left-radius: 0; border-bottom-left-radius: 0"
+              >Кнопка</a-button
+            >
+          </a-input-group>
         </div>
       </div>
 
@@ -928,7 +954,9 @@
 </template>
 
 <script>
+import AInputGroup from 'ant-design-vue/input/Group';
 export default {
   name: 'Demo',
+  components: { AInputGroup },
 };
 </script>
