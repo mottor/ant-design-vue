@@ -928,6 +928,11 @@
         <a-paragraph :copyable="{ text: 'Hello, Ant Design!' }">Replace copy text.</a-paragraph>
 
         <br />
+        <br />
+        <a-paragraph>
+          Text text <a class="ant-link-secondary">Link secondary</a> text.
+        </a-paragraph>
+        <br />
         <a-paragraph ellipsis style="width: 250px; border: 1px dashed rgba(0,0,0,0.25);">
           Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
           Design, a design language for background applications, is refined by Ant UED Team. Ant
