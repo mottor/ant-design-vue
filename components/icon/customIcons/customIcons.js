@@ -8,6 +8,7 @@ export { default as MtrCloseOutline } from './jsIcons/outline/MtrCloseOutline.js
 export { default as MtrCog1Outline } from './jsIcons/outline/MtrCog1Outline.js';
 export { default as MtrCog2Outline } from './jsIcons/outline/MtrCog2Outline.js';
 export { default as MtrCog3Outline } from './jsIcons/outline/MtrCog3Outline.js';
+export { default as MtrDotsDragOutline } from './jsIcons/outline/MtrDotsDragOutline.js';
 export { default as MtrDotsOutline } from './jsIcons/outline/MtrDotsOutline.js';
 export { default as MtrExternalLinkOutline } from './jsIcons/outline/MtrExternalLinkOutline.js';
 export { default as MtrEyeOffOutline } from './jsIcons/outline/MtrEyeOffOutline.js';

@@ -347,6 +347,10 @@
             <td>mtr-dots</td>
           </tr>
           <tr>
+            <td><a-icon type="mtr-dots-drag" /></td>
+            <td>mtr-dots-drag</td>
+          </tr>
+          <tr>
             <td>
               <a-icon type="mtr-check" />
             </td>
