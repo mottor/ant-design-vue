@@ -226,3 +226,20 @@
     overflow: hidden;
   }
 }
+
+a.@{ant-prefix}-link-secondary {
+  color: @link-secondary-color;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:focus,
+  &:hover {
+    color: @link-secondary-hover-color;
+  }
+
+  &:active {
+    color: @link-secondary-active-color;
+  }
+}
