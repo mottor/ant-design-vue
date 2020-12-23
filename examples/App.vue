@@ -9,7 +9,9 @@
             <a-radio-group default-value="1" size="small">
               <a-radio-button value="1">1</a-radio-button>
               <a-radio-button value="2">2</a-radio-button>
-              <a-radio-button value="3">3</a-radio-button>
+              <a-radio-button value="3">
+                <a-icon type="mtr-table-view" />
+              </a-radio-button>
             </a-radio-group>
           </td>
           <td>
@@ -52,7 +54,9 @@
             <a-radio-group default-value="1" size="default">
               <a-radio-button value="1">1</a-radio-button>
               <a-radio-button value="2">2</a-radio-button>
-              <a-radio-button value="3">3</a-radio-button>
+              <a-radio-button value="3">
+                <a-icon type="mtr-table-view" />
+              </a-radio-button>
             </a-radio-group>
           </td>
           <td>
@@ -84,7 +88,9 @@
             <a-radio-group default-value="1" size="large">
               <a-radio-button value="1">1</a-radio-button>
               <a-radio-button value="2">2</a-radio-button>
-              <a-radio-button value="3">3</a-radio-button>
+              <a-radio-button value="3">
+                <a-icon type="mtr-table-view" />
+              </a-radio-button>
             </a-radio-group>
           </td>
           <td>
