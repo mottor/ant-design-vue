@@ -18,6 +18,7 @@ export { default as MtrPaperclipOutline } from './jsIcons/outline/MtrPaperclipOu
 export { default as MtrPlusOutline } from './jsIcons/outline/MtrPlusOutline.js';
 export { default as MtrSearchOutline } from './jsIcons/outline/MtrSearchOutline.js';
 export { default as MtrSettingsOutline } from './jsIcons/outline/MtrSettingsOutline.js';
+export { default as MtrStatsOutline } from './jsIcons/outline/MtrStatsOutline.js';
 export { default as MtrTableViewOutline } from './jsIcons/outline/MtrTableViewOutline.js';
 export { default as MtrTrash1Outline } from './jsIcons/outline/MtrTrash1Outline.js';
 export { default as MtrTrash2Outline } from './jsIcons/outline/MtrTrash2Outline.js';
