@@ -4,7 +4,7 @@
 
 Оригинальный readme - `README-original.md`
 
-Адрес NPM-пакета: 
+Адрес NPM-пакета:
 
     https://www.npmjs.com/package/@mottor/ant-design-vue
 
@@ -14,15 +14,15 @@
 
 ## Подтягивание изменений оригинала
 
-1. Переключиться на нужную ветку
+1.  Переключиться на нужную ветку
 
-2. Выполнить
+2.  Выполнить
 
         ./pull-original.sh
 
-3. Разрешить конфликты
+3.  Разрешить конфликты
 
-4. Запушить изменения
+4.  Запушить изменения
 
 ## Обновление версии в NPM
 
@@ -30,7 +30,9 @@
 
 2. Выполнить
 
-        npm run dist && npm run compile && npm publish --public
+   nvm use npm i npm run dist && npm run compile && npm publish --public
+
+3. Проверить публикацию новой версии https://www.npmjs.com/package/@mottor/ant-design-vue - вкладка Versions.
 
 ## Push
 
