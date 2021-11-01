@@ -30,7 +30,13 @@
 
 2. Выполнить
 
-   nvm use npm i npm run dist && npm run compile && npm publish --public
+   npm login
+
+   nvm use
+
+   npm i
+
+   npm run dist && npm run compile && npm publish --public
 
 3. Проверить публикацию новой версии https://www.npmjs.com/package/@mottor/ant-design-vue - вкладка Versions.
 
