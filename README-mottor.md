@@ -26,19 +26,16 @@
 
 ## Обновление версии в NPM
 
-1. Обновить номер версии в `package.json`
+1.  Обновить номер версии в `package.json`
 
-2. Выполнить
+2.  Выполнить
 
-   npm login
+        npm login
+        nvm use
+        npm i
+        npm run dist && npm run compile && npm publish --public
 
-   nvm use
-
-   npm i
-
-   npm run dist && npm run compile && npm publish --public
-
-3. Проверить публикацию новой версии https://www.npmjs.com/package/@mottor/ant-design-vue - вкладка Versions.
+3.  Проверить публикацию новой версии https://www.npmjs.com/package/@mottor/ant-design-vue - вкладка Versions.
 
 ## Push
 
